@@ -11,7 +11,7 @@ import DinoDisplay from '../components/DinoDisplay';
 import Trexcontract from '../artifacts/contracts/Trexcontract.sol/Trexcontract.json'
 import { get } from 'jquery';
 import { render } from 'react-dom';
-const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+const contractAddress = "0xC37C192692CEf8B53878E25a767dEEFa084A6725"
 
 
 
@@ -182,8 +182,6 @@ export default function Home(props) {
     // get all trexes
     if (contract) {
       let alltrexes = await trexesList();
-      // [{age: 1, name: harry, owner: xxxx} {...}]
-      // 这里alltrexes 此时此刻是 [{...}]
       const promiseA = await resolveAllTre(alltrexes)
       console.log(promiseA)
       setMytrexes(promiseA)
