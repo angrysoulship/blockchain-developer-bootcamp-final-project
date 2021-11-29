@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@400;500;700&display=swap');
+
+:root {
+  --pink: #F668B1;
+  --blue: #5AC2DA;
+  --yellow: #FEE56D;
+  --dark-grey: #666666;
+  --light-grey: #C4C4C4;
+}
+
+@font-face {
+  font-family: 'Pixeboy';
+  src: url(../font/Pixeboy.ttf);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Mohave', sans-serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 2rem;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.wrapper {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dino-display {
+  width: 30%;
+  min-width: 250px;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 2px 3px 0px #b4b4b4;
+  justify-self: center;
+}
+
+/* ***** Navbar ***** */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0px 2px 3px 0px #b4b4b4;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.navlink {
+  margin-right: 1rem;
+}
+
+.logo, h2 {
+  font-family: Pixeboy;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.btn-connect button{
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: .3rem .6rem;
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+}
+
+/* ***** Footer ***** */
+footer {
+  width: 100vw;
+  color: white;
+  background-color: black;
+  border-top: solid 1px var(--light-grey);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+/* *********** Dino ***********  */
+.dino-display {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dino {
+   width: 160px;
+   height: 160px;
+ }
+
+.dna-info {
+  width: 80vw;
+  align-self: center;
+}
+/* ******* Head *******  */
+.head {
+  position: relative;
+}
+
+.head-wrapper {
+  position: relative;
+}
+
+.head-top, .head-mid, .head-right {
+  background-color: #8FB2AC;
+}
+
+.head-top {
+  position: absolute;
+  width: 43px;
+  height: 28px;
+  border-radius: 59% 38% 0 0;
+  bottom: -32px;
+  left: 30px;
+}
+
+.head-mid {
+  position: absolute;
+  width: 120px;
+  height: 95px;
+  border-radius: 30% 27% 48% 32%;
+  top: 10px;
+  left: 20px;
+}
+
+.head-right {
+  position: absolute;
+  width: 80px;
+  height: 73px;
+  border-radius: 22% 27% 36% 12%;
+  top: 32px;
+  left: 80px;
+}
+
+.eye-angry {
+  position: absolute;
+  width: 18px;
+  height: 9px;
+  background-color: #474242;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+  top: 35px;
+  left: 78px;
+  z-index: 1;
+}
+
+.eye-round {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #474242;
+  top: 30px;
+  left: 78px;
+}
+
+.eye-hl-sm, .eye-hl-lg {
+  background-color: aliceblue;
+}
+.eye-hl-sm {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  top: 3px;
+  left: 5px;
+}
+
+.eye-hl-lg {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  top: 5px;
+  left: 8px;
+}
+
+.nose-left, .nose-right {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #474242;
+}
+
+.nose-left {
+  top: 43px;
+  left: 128px;
+}
+
+.nose-right {
+  top: 43px;
+  left: 136px;
+}
+
+.mouth{
+  position: absolute;
+  width: 48px;
+  height: 14px;
+  background-color: white;
+  border-radius: 4px 2px 8px 4px;
+  top: 69px;
+  left: 116px;
+}
+
+.mouth-smile {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: solid 2px;
+  border-color: transparent transparent #474242 transparent;
+      border-radius: 30% 30% 70% 70%;
+    top: 58px;
+    right: 25px;
+}
+
+/* ******* Body *******  */
+.body {
+  position: relative;
+}
+
+.body-wrapper {
+  position: relative;
+  top: 66px;
+}
+
+.body-tail, .body-main {
+  background-color: #8FB2AC;
+}
+
+.body-main {
+  position: absolute;
+  width: 56px;
+  height: 68px;
+  border-radius: 44% 41% 35% 25%;
+  top: 5px;
+  left: 43px;
+}
+
+.body-tail {
+  position: absolute;
+  width: 47px;
+  height: 57px;
+  border-radius: 115% 0;
+  left: 16px;
+  top: 19px;
+  transform: rotate(-2deg);
+}
+
+.belly {
+  position: absolute;
+  width: 27px;
+  height: 40px;
+  border-radius: 170px 37px 152px 6px;
+  background-color: #F3E7C6;
+  top: 99px;
+  right: 61px;
+}
+
+.hand {
+  width: 8px;
+  height: 13px;
+  border-radius: 13px 13px 10px 10px;
+  transform: rotate(-20deg);
+  background-color: #6C938C;
+}
+
+.left-hand {
+  position: absolute;
+  top: 100px;
+  right: 71px;
+  z-index: 1;
+}
+
+.right-hand {
+  position: absolute;
+  top: 99px;
+  right: 57px;
+  z-index: -3;
+}
+
+.foot {
+  width: 22px;
+  height: 12px;
+  border-radius: 13px 13px 3px 3px;
+  background-color: #6C938C;
+}
+
+.left-foot {
+  position: absolute;
+  top: 133px;
+  right: 80px;
+}
+
+.right-foot {
+  position: absolute;
+  top: 126px;
+  right: 58px;
+  z-index: -3;
+}
+
+/* ******* Spike *******  */
+.spikes{
+  position: absolute;
+}
+
+.spike {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #116390;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.spike-1 {
+  top: -2px;
+  left:32px;
+  transform: rotate(-30deg);
+}
+
+.spike-2 {
+  top: 10px;
+  left:20px;
+  transform: rotate(-45deg);
+}
+
+.spike-3 {
+  top: 26px;
+  left:13px;
+  transform: rotate(-66deg);
+}
+
+.spike-4 {
+  top: 96px;
+  left:19px;
+  transform: rotate(-45deg);
+}
+
+.spike-5 {
+  top: 110px;
+  left:12px;
+  transform: rotate(-60deg);
+}
+
+.spike-6 {
+  top: 126px;
+  left:8px;
+  transform: rotate(-80deg);
+}
+
+
+/* *********** Dino Setting Form ***********  */
+.dino-setting {
+  width: 60%;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px 0px #b4b4b4;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+
+.form-info {
+  display: flex;
+}
+
+.code-tag {
+  font-size: .65rem;
+  background-color: var(--dark-grey);
+  color: white;
+  padding: .25em .5em;
+  margin-left: 1em;
+  border-radius: 4px;
+  align-self: center;
+}
+
+/* *********** Created-Dinos ***********  */
+.created-dinos {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: repeat(3, 300px [col-start]);
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+/* *********** Utilities ***********  */
+.hidden {
+  display: none;
+}
