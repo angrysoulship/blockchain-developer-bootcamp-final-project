@@ -8,7 +8,7 @@ import DinoDisplay from '../components/DinoDisplay';
 
 
 
-import Trexcontract from '../artifacts/contracts/Trexcontract.sol/Trexcontract.json'
+import Trexcontract from '../Trexcontract.json'
 import { get } from 'jquery';
 import { render } from 'react-dom';
 const contractAddress = "0xC37C192692CEf8B53878E25a767dEEFa084A6725"
