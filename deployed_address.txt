@@ -1,0 +1,2 @@
+network: Mumbai Testnet
+contract address: 0xC37C192692CEf8B53878E25a767dEEFa084A6725
