@@ -51,7 +51,7 @@ describe("Making T-rex test", function () {
     expect(result_to_number).to.equal(1)
   })
 
-  it("Generation 0 trexes should has a limit of 100", async function () {
+  it("Checking total supply", async function () {
     const Trexcontract = await ethers.getContractFactory("Trexcontract");
     const trexcontract = await Trexcontract.deploy();
 

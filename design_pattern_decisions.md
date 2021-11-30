@@ -1,4 +1,8 @@
-Inheritance and Interfaces (Importing and extending contracts and/or using contract interfaces) Inheritances and Interfaces — (note: this is already a requirement in the final project, so you can simply describe which library or interface you use)
 
-Access Control Design Patterns (Restricting access to certain functions using things like Ownable, Role-based Control) Access Control Design Patterns
+# Design Pattern Used
 
+## Inheritance and Interfaces 
+* using IERC721 interface
+
+## Access Control Design Patterns 
+* function using `onlyOwner` modifier to check if it is the owner calling. some of the functions are owner calling only.
