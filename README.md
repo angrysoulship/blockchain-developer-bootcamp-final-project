@@ -23,6 +23,7 @@ https://trexfactory.vercel.app/
 https://www.youtube.com/watch?v=hDzOXQgyOdA
 
 ## Public Ethereum wallet for certification:
+0x292a7141f0210303828D03e7627404D7b5d7607c
 
 ## Project description
 User could create their custom designed t-rex cartoon images and save to the blockchain.
