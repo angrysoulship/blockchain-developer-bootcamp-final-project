@@ -11,8 +11,10 @@ import DinoDisplay from '../components/DinoDisplay';
 import Trexcontract from '../Trexcontract.json'
 import { get } from 'jquery';
 import { render } from 'react-dom';
+// Mumbai contractAddress
 const contractAddress = "0xC37C192692CEf8B53878E25a767dEEFa084A6725"
-
+// Localhost contract address
+// const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
 
 
 

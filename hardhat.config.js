@@ -2,7 +2,7 @@ require("@nomiclabs/hardhat-ethers");
 const fs = require('fs');
 const privateKey = fs.readFileSync(".secret").toString().trim();
 module.exports = {
-  defaultNetwork: "matic",
+  defaultNetwork: "hardhat",
   networks: {
     hardhat: {
       chainId: 1337

@@ -7,8 +7,10 @@ describe("Limit Test", function () {
   it("Generation 0 trexes should has a limit of 100", async function () {
     const Trexcontract = await ethers.getContractFactory("Trexcontract");
     const trexcontract = await Trexcontract.deploy();
+    const result = await trexcontract.Creation_Limit_Gen0()
+    const result_to_number = result.toNumber()
 
-    expect(await trexcontract.Creation_Limit_Gen0()).to.equal(100);
+    expect(result_to_number).to.equal(100);
   });
 
   
@@ -19,7 +21,11 @@ describe("Making T-rex test", function () {
     const Trexcontract = await ethers.getContractFactory("Trexcontract");
     const trexcontract = await Trexcontract.deploy();
     await trexcontract.createtrexGen0(1001)
-    expect(await trexcontract.gen0Counter()).to.equal(1)
+    const result = await trexcontract.gen0Counter()
+    
+    const result_to_number = result.toNumber()
+
+    expect(result_to_number).to.equal(1)
   })
 
   it("Get the trex by index", async function () {
@@ -39,8 +45,10 @@ describe("Making T-rex test", function () {
     const trexcontract = await Trexcontract.deploy();
 
     await trexcontract.createtrexGen0(1001)
+    const result = await trexcontract.balanceOf(owner.address)
+    const result_to_number = result.toNumber()
 
-    expect(await trexcontract.balanceOf(owner.address)).to.equal(1)
+    expect(result_to_number).to.equal(1)
   })
 
   it("Generation 0 trexes should has a limit of 100", async function () {
@@ -48,8 +56,10 @@ describe("Making T-rex test", function () {
     const trexcontract = await Trexcontract.deploy();
 
     await trexcontract.createtrexGen0(1001)
+    const result = await trexcontract.totalSupply()
+    const result_to_number = result.toNumber()
 
-    expect(await trexcontract.totalSupply()).to.equal(1);
+    expect(result_to_number).to.equal(1);
   });
 })
 
