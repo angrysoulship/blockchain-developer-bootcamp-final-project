@@ -16,11 +16,11 @@ https://trexfactory.vercel.app/
 
 ### Frontend
 1. Run `npm run dev`
-2. Open `http://localhost:3000
+2. Open http://localhost:3000
 
 
 ## Screencast link
-https://youtu.be/hDzOXQgyOdA
+https://www.youtube.com/watch?v=hDzOXQgyOdA
 
 ## Public Ethereum wallet for certification:
 
